@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Chat 36</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MÀN NHẬP TÊN (FULL SCREEN) -->
+<div id="login">
+  <div class="login-box">
+    <h2>👋 Chào bạn</h2>
+    <p>Nhập tên để vào chat</p>
+
+    <input id="username" placeholder="Tên của bạn">
+    <div class="btns">
+      <button onclick="randomName()">🎲 Random</button>
+      <button onclick="joinChat()">Vào chat</button>
+    </div>
+  </div>
+</div>
+
+<!-- CHAT (ẨN MẶC ĐỊNH) -->
+<div id="chat" class="hidden">
+  <div class="chat-header">💬 Phòng chat chung</div>
+
+  <div id="messages"></div>
+
+  <div class="input">
+    <input id="message" placeholder="Nhập tin nhắn..." onkeydown="enterSend(event)">
+    <button onclick="send()">Gửi</button>
+  </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

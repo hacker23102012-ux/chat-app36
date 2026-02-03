@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+}
+
+/* ẨN */
+.hidden {
+  display: none;
+}
+
+/* LOGIN FULL SCREEN */
+#login {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.btns button {
+  margin: 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btns button:last-child {
+  background: #667eea;
+  color: white;
+}
+
+/* CHAT */
+#chat {
+  width: 400px;
+  height: 550px;
+  background: white;
+  margin: 40px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background: #667eea;
+  color: white;
+  padding: 12px;
+  text-align: center;
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin: 6px 0;
+}
+
+.system {
+  text-align: center;
+  font-size: 13px;
+  color: gray;
+}
+
+.input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.input input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+}
+
+.input button {
+  padding: 10px 15px;
+  border: none;
+  background: #667eea;
+  color: white;
+}
